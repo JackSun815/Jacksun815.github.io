@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Fira Sans', sans-serif;
+    font: normal 100%;
+}
+
+.mySlides {display: none;}
+
+.slideshow-container img {
+    object-fit: cover;
+    width:100%;
+    height:600px;}
+
+
+
+/* Navigation Bar */
+.navbar a:hover{
+    color:#7FDDDD;
+    padding-bottom:5px;
+    border-bottom: 0px solid #258989;
+  } 
+  
+  .navbar a.current{
+    color:#258989 !important;
+    padding-bottom:5px;
+    border-top: 2px solid #258989;
+    border-bottom: 2px solid #258989 !important;
+  }
+  
+  .topnav{
+    z-index: 1;
+    background-color: white;
+    box-shadow: 0 4px 2px 2px gray !important;
+  }
+  
+  .modify-navbar{
+    font-size: 1.2rem;
+    font-weight: lighter;
+    font-weight:450;
+    filter:drop-shadow(10px 10px 10px #A4BBFF);
+    padding-right:15px;
+  }
+  
+  .green{
+    color: black !important; 
+  }
+  
+  .green:hover{
+    color:#7FDDDD !important;
+    font-size: 1.2rem;
+    font-weight:400;
+  }
+  
+  
+  .navbar-toggler-icon{
+    color:#258989;
+  }
+  /*end nav bar */
+
+
+#current-donate{
+    color:rgb(255, 255, 255);
+    border-radius: 18px;
+    border: 2px solid #258989;
+    background-color: #258989;
+    letter-spacing: -1px;
+    padding:3px 15px;
+    opacity: 0.8;
+}
+
+#donate-form{
+    border-radius: 13px;
+    max-width:90%;
+    border:1px solid #ccc;
+    margin:auto;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+    font-weight: bold;
+    color: #258989;
+    text-decoration: underline;
+    padding-left: 7px;
+    padding-right: 7px;
+    text-align: center;
+}
+
+p{
+    margin: 0 15px;
+}
+
+
+.w3-image{
+    border-radius: 13px 13px 0 0;
+    float:left;
+    margin-right: 15px;
+}
+
+#payment-icon{
+    width:150px;
+    display: block;
+    margin:auto;
+}
+
+#donate-button{
+    display: flex;
+    justify-content: center;
+}
+
+.pattern{
+    position: fixed;
+    width: 100vw;
+    height: 100vh; 
+    background-color: #e5e5f7;
+    opacity: 0.2;
+    background: linear-gradient(135deg, #439eb455 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(225deg, #439eb4 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(315deg, #439eb455 25%, transparent 25%) 0px 0/ 80px 80px, linear-gradient(45deg, #439eb4 25%, #e5e5f7 25%) 0px 0/ 80px 80px;
+    z-index: -100;
+}
+
+
+/* Footer */
+.footer-pos{
+    background-color: #258989;
+    text-decoration: none;
+  }
+  
+  #footer-background{
+    width:100%;
+    margin-bottom: -50px;
+  }
+  
+  .footer-text{
+    margin-bottom: 10px;
+  }
+  
+  .footer-text a{
+    text-decoration: none !important;
+  }
+  
+  #footer-home{
+    font-weight: 800;
+    text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #0fa,
+      0 0 80px #0fa,
+      0 0 90px #0fa,
+      0 0 100px #0fa,
+      0 0 150px #0fa;
+  }
+  
+  .footer-text a:hover{
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffdd1b,
+      0 0 35px #ffdd1b, 0 0 40px #ffdd1b, 0 0 50px #ffdd1b, 0 0 75px #ffdd1b;
+      font-size: 1.1rem;
+    
+  }
+
+
+/* Bootstrap breakpoint for the navbar hamburger menu */
+@media (min-width: 992px){
+
+    .donate{
+        color:white !important;
+        border-radius: 20px;
+        /* border: 2px solid #258989; */
+        background-color: #258989 !important;
+        letter-spacing: -1px !important;
+        width: 120px !important; 
+        font-size: 1rem;
+        box-shadow:
+        0.3em 0.3em 1em #7FDDDD;
+    }
+    .navbar a:hover{
+        color:#7FDDDD;
+        padding-bottom:5px;
+        border-bottom: 0px solid #258989;
+    } 
+    
+    .navbar a.current{
+        color:#258989 !important;
+        padding-bottom:5px;
+        border-bottom: 0px solid #258989;
+        border-top: 0px solid #258989;
+    }
+  
+    .footer-text h6{
+        font-size: large !important;
+        margin-bottom: 20px !important;
+    }
+  }
