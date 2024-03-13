@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Chalfant Run</title>
-        <link rel="stylesheet" href="css/donate.css">
+        <link rel="stylesheet" href="css/events.css">
         <!-- Meta Tags-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset="UTF-8">
@@ -40,7 +40,7 @@
                   <a class="nav-link px-3 green" href="./streams.html">Meet Our Streams</a>
                 </li>
                 <li class="nav-item modify-navbar">
-                  <a class="nav-link px-3 green" href="./events.html">Events</a>
+                  <a class="nav-link px-3 green current" href="./events.html">Events</a>
                 </li>
                 <li class="nav-item modify-navbar">
                   <a class="nav-link px-3 green donate" href="./donate.html">    Donate</a>
@@ -50,37 +50,43 @@
           </div>
         </nav>
   
-        <div id="donate-form">
-            <img src="/img/scroll1-1.png" class="w3-image" alt="donation page" style="width:100%;max-width:600px"/>
-            <h1>Support Us</h1>             
-            <div class="donate-text">
-                <p><br>Your donation to the Chalfant Run-Thompson Run Watershed Association is one of the most powerful means for you to support the protection, preservation, and restoration of the streams and tributaries of our close to 20-square mile watershed, which stretches from Wilkinsburg to Plum, and includes Penn Hills, Monroeville, Wilkins Township, Churchill and Turtle Creek.
+
+        <div class="body-container">
+            <h1>Past Events</h1> 
+            <div class="events">
+                <img id="firefly" src="img/firefly.png" alt="fireflyhike"/>
+                <h2>Firefly Hike</h2>
+                <p>Whether we know it or not, we all live in a watershed. The raindrops that fall in our lawns, fields, woods and parking lots ultimately flow into a creek or stream. As a result, the actions we take and the decisions we make with how we use, manage, conserve and value water impact the needs of those downstream, including our fish and wildlife. Our aquifers, springs, creeks, and rivers need you more than ever.
+                <br><br>
+                Come join us this Friday to explore what nature has to offer. This is a paved trail hike, led by our expert guide, Don!
+                </p>
                 <br>
-                <br>
-                As an organization, we have a two-pronged approach to protecting our beloved local environment: </p>
-                <br>
-                <ol> <li>1. To actively study, protect and clean up these streams, and </li>
-                <li>2. To engage our community in their local environment, particularly our school-age residents.</li>
-                <br>
-                </ol>
-                <p>Folks won't protect what they don't love, and they can't love what they don't know. We have to, have to, have to get folks, especially kids, outside and allow them to interact with Nature so that they will grow up to love and protect it also.
-                We have the potential to have Laurel-Highland-quality streams right here in our backyards and flowing under our bridges and streets! Our streams are not completely dead anymore, and we can make them vibrant, life-giving places again that invite awe, wonder and contemplation.</p>
+                <a href="https://m.facebook.com/events/164093532134222/">READ MORE</a>
             </div>
             <br>
-            <br>
-            
-            <form id="donate-button" action="https://www.paypal.com/donate" method="post" target="_top">
-            <input type="hidden" name="hosted_button_id" value="LALFNW2XYF5VY">
-            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" width="110" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="5" height="5" />
-            </form>
+            <div class="events">
+                <img id="engineer" src="img/engineer.png" alt="Volunteer"/>
 
-            <img id="payment-icon" src="/img/payment.png" alt="Pay With Paypal Logo"/>
+                <h2>Meet the Engineer</h2>
+                <p>Our goal is to protect and clean up our waterways so that they are vibrant, life-giving streams again, places of beauty and awe that welcome reflection. We have to, have to, have to engage our neighbors in this process or it won't work. Nature must be loved to be protected and so we aim to foster a deep connection between our neighbors and their watershed and the life it supports.
+                    <br><br>
+                    Come learn more about the Abandoned Mine Drainage that we have been battling against and hear from one of our engineers who is working on protecting the watershed.
+
+                </p>
+                <br>
+                <a href="https://m.facebook.com/events/164093532134222/">READ MORE</a>
+            </div>
             <br>
-            <br>
-            <br>
+            <div class="events">
+                <img id="assessment" src="img/assessment.png" alt="assessment"/>
+                <h2>Community Needs Assessment</h2>
+                <p>What matters to you in building a green community? Is it teh clean stremas? The family friendly trails? Or a restored biodiversity?
+                The Chalfant Run Thompson Run Watershed Association is trying to understand our community needs and wants. We strive to move forward protecting, preserving and restoring our local streams and green spaces. 
+                </p>
+                <br>
+                <a href="https://m.facebook.com/events/164093532134222/">READ MORE</a>
+            </div>
         </div>
-    </div>
 
       <!-- Footer -->
       <img id="footer-background" src="./img/footer-bg.png">
@@ -117,7 +123,7 @@
 
               <!-- Grid column -->
               <div class="col-md-2 footer-text">
-                <h6 class="text-uppercase font-weight-bold">
+                <h6 id="footer-home" class="text-uppercase font-weight-bold">
                   <a href="./events.html" class="text-white">Events</a>
                 </h6>
               </div>
@@ -125,7 +131,7 @@
 
               <!-- Grid column -->
               <div class="col-md-2 footer-text">
-                <h6 id="footer-home" id="footer-donate" class="text-uppercase font-weight-bold">
+                <h6 id="footer-donate" class="text-uppercase font-weight-bold">
                   <a href="./donate.html" class="text-white">Donate</a>
                 </h6>
               </div>
