@@ -282,7 +282,10 @@ body{
     margin-left:50px;
     margin-bottom: -550px;
 }
-
+#who-we-are-pos{
+    position: absolute;
+    top: 850px !important;
+}
 .about-us-title{
     width:85% !important;
     padding-right:50px !important;
