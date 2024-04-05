@@ -70,6 +70,24 @@ img{
 
 /*end nav bar */
 
+.hidden{
+  opacity: 0;
+  transition: all 1.5s;
+  filter: blur(5px);
+  transform: translateX(-100px);
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0px);
+}
+
+@media(prefers-reduced-motion){
+  .hidden{
+      transition: none;
+  }
+}
 
 /*Figures and Images*/
   .photo-gallery{

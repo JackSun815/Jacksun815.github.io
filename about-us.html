@@ -4,6 +4,7 @@
     <head>
       <title>Chalfant Run</title>
       <link rel="stylesheet" href="css/styles.css">
+      <script defer src="./js/app.js"></script>
       <!-- Meta Tags-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta charset="UTF-8">
@@ -22,7 +23,7 @@
       <!-- Global Navigation --> 
       <nav class="navbar navbar-expand-lg bg-body-tertiary topnav">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="./index.html">
             <img src="./img/output-onlinepngtools.png" alt="Logo" height="65" class="d-inline-block align-text-top">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,97 +53,196 @@
             
 
 
-    <!--About Us Section-->
-    <div id="about-us-page-id" class="about-us-background-blur">
+    <!--About Us Section top background-->
+    <div class='about-us-background'>
+      <h1>Ripples of Change: 
+      <br> From Industrial Runoff to Natural Runways </h1>
     </div>
-    <div class="about-us-container about-us-page">
-      <div class="row">
-          <div class="col-md-8 about-us-title about-us-title2">
-            <h2>Our Organization History</h2>
 
-            <p>We are a group of neighbors who met and bonded over our love of nature in our area and who have been completely charmed by our local streams. Did you know that lots of things actually live in our waters? We can make it better, especially if we work together!</p>
-          </div>
-          <hr>
+    <!--About Us Our Story-->
+    <div class="our-story-container">
+      <div class="col-md-6 our-story-text hidden">
+        <h2>Our Story</h2>
+        <p>Born from a shared passion for the natural beauty surrounding our local streams, our group of neighbors united with a mission to revive and safeguard these waters. Together, we envision transforming them back into vibrant sanctuaries of life and serenity, inviting our community to join in rekindling a profound bond with nature. Our story is one of collective action, driven by the belief that to protect our environment, we must first fall in love with it anew.</p>
       </div>
-      <div class="row">
-        <div class="col-md-8 about-us-title about-us-title2">
-          <h2>Our Mission</h2>
-          <p>Our goal is to protect and clean up our waterways so that they are vibrant, life-giving streams again, places of beauty and awe that welcome reflection. We have to, have to, have to engage our neighbors in this process or it won't work. Nature must be loved to be protected and so we aim to foster a deep connection between our neighbors and their watershed and the life it supports.</p>
-        </div>
-        <hr>
-    </div>
-    <!-- <div class="row">
-      <div class="col-md-8 about-us-title about-us-title2">
-        <h2>Board Members</h2>
-        
+      <div class="col-md-6 our-story-img">
+        <img src="./img/our-story.png">
       </div>
-      <hr>
-    </div> -->
     </div>
 
-
-    <section id="timeline">
+    <!--About Us Side by Side-->
+    <div class="side-by-side-container">
+      <h1 id="side-by-side-text" class="text-center hidden">From Industrial Runoff to Natural Runways</h1>
+      <div class="col-md-6 " >
+        <img id="side-by-side" class="img-fluid" src="img/about-us-left.JPG">
+      </div>
   
-      <div class="tl-item">
-        
-        <div class="tl-bg" style="background-image: url(https://placeimg.com/801/801/nature)"></div>
-        
-        <div class="tl-year">
-          <p class="f2 heading--sanSerif">2019</p>
-        </div>
-    
-        <div class="tl-content">
-          <h1>Organization Founded</h1>
-          <p>When Renee founded the organization, the Churchill Valley Greenway was abondoned from the bankrupcy of the golf club that ran on it. It was an open field which she would let her dog run free.</p>
-        </div>
-    
+      <div class="col-md-6">
+        <img id="side-by-side" class="img-fluid" src="img/about-us-right.png">
       </div>
-    
-      <div class="tl-item">
-        
-        <div class="tl-bg" style="background-image: url(https://placeimg.com/802/802/nature)"></div>
-        
-        <div class="tl-year">
-          <p class="f2 heading--sanSerif">2020</p>
-        </div>
-    
-        <div class="tl-content">
-          <h1 class="f3 text--accent ttu">Riverbed Cleanup</h1>
-          <p>The Chalfant Run organized their first event, more than 80 volunteers showed up to cleanup the riverbed, among them was Summer Lee, PA's congresswoman. </p>
-        </div>
-    
-      </div>
-    
-      <div class="tl-item">
-        
-        <div class="tl-bg" style="background-image: url(https://placeimg.com/803/803/nature)"></div>
-        
-        <div class="tl-year">
-          <p class="f2 heading--sanSerif">2023</p>
-        </div>
-    
-        <div class="tl-content">
-          <h1 class="f3 text--accent ttu">Growing in Size</h1>
-          <p>After Covid, we continued to grow in size, and partnered with University of Pittsburgh to study and preserve of rivers and streams.</p>
-        </div>
-    
-      </div>
-    
-      <div class="tl-item">
-        
-        <div class="tl-bg" style="background-image: url(https://placeimg.com/800/800/nature)"></div>
-        
-        <div class="tl-year">
-          <p class="f2 heading--sanSerif">2024</p>
-        </div>
-    
-        <div class="tl-content">
-          <h1 class="f3 text--accent ttu">To Be Continued...</h1>
-        </div>
-    
-      </div>
-    </section>
+    </div>
+    <!--End of Side by Side-->
 
+    <!--About Us Our Team-->
+    <div class="our-story-container">
+      <div class="col-md-6 our-story-img">
+        <img src="./img/our-team.JPG">
+      </div> 
+      <div class="col-md-6 our-story-text hidden">
+        <h2>Board of Directors</h2>
+        <h3>Renee Dolney</h3>
+        <h3>Tammy </h3>
+        <h3>Don</h3>
+        <h3>Alyx </h3>
+        <h3>Jack Sun</h3>
+      </div>
+    </div>
+
+
+    <div class="join-us-container hidden">
+      <h2>Join Our Team</h2>
+      <p>As part of our team, you'll contribute to meaningful projects that not only protect but also celebrate our local waters as vibrant sanctuaries of life.</p>
+      <form id="fs-frm" name="registration-form" accept-charset="utf-8" action="https://formspree.io/f/mkndpwwp" method="post">
+        <fieldset id="fs-frm-inputs">
+          <label for="full-name">Full Name</label>
+          <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+          <label for="email-address">Email Address</label>
+          <input type="email" name="_replyto" id="email-address" placeholder="hello@world.com" required="">
+          <label for="street-address">Street Address</label>
+          <input type="text" name="street" id="street-address" placeholder="Street" required="">
+          <fieldset class="locale">
+            <legend>City</legend>
+            <input type="text" name="city" placeholder="City" required="">
+            <select name="state" required="">
+              <option value="" selected="" disabled="">State</option>
+              <option value="AL">Alabama</option>
+              <option value="AK">Alaska</option>
+              <option value="AZ">Arizona</option>
+              <option value="AR">Arkansas</option>
+              <option value="CA">California</option>
+              <option value="CO">Colorado</option>
+              <option value="CT">Connecticut</option>
+              <option value="DE">Delaware</option>
+              <option value="DC">District Of Columbia</option>
+              <option value="FL">Florida</option>
+              <option value="GA">Georgia</option>
+              <option value="HI">Hawaii</option>
+              <option value="ID">Idaho</option>
+              <option value="IL">Illinois</option>
+              <option value="IN">Indiana</option>
+              <option value="IA">Iowa</option>
+              <option value="KS">Kansas</option>
+              <option value="KY">Kentucky</option>
+              <option value="LA">Louisiana</option>
+              <option value="ME">Maine</option>
+              <option value="MD">Maryland</option>
+              <option value="MA">Massachusetts</option>
+              <option value="MI">Michigan</option>
+              <option value="MN">Minnesota</option>
+              <option value="MS">Mississippi</option>
+              <option value="MO">Missouri</option>
+              <option value="MT">Montana</option>
+              <option value="NE">Nebraska</option>
+              <option value="NV">Nevada</option>
+              <option value="NH">New Hampshire</option>
+              <option value="NJ">New Jersey</option>
+              <option value="NM">New Mexico</option>
+              <option value="NY">New York</option>
+              <option value="NC">North Carolina</option>
+              <option value="ND">North Dakota</option>
+              <option value="OH">Ohio</option>
+              <option value="OK">Oklahoma</option>
+              <option value="OR">Oregon</option>
+              <option value="PA">Pennsylvania</option>
+              <option value="RI">Rhode Island</option>
+              <option value="SC">South Carolina</option>
+              <option value="SD">South Dakota</option>
+              <option value="TN">Tennessee</option>
+              <option value="TX">Texas</option>
+              <option value="UT">Utah</option>
+              <option value="VT">Vermont</option>
+              <option value="VA">Virginia</option>
+              <option value="WA">Washington</option>
+              <option value="WV">West Virginia</option>
+              <option value="WI">Wisconsin</option>
+              <option value="WY">Wyoming</option>
+            </select>
+            <input type="text" name="postal-code" placeholder="zipcode" required="">
+          </fieldset>
+          <label for="note">Note</label>
+          <textarea rows="2" name="note" id="note" placeholder="Leave us a message and we'll get back to you!"></textarea>
+          <input type="hidden" name="_subject" id="email-subject" value="Registration Form Submission">
+        </fieldset>
+        <input type="submit" value="submit">
+      </form>
+    </div>
+
+    <!--About Us Timeline-->
+    <div class="timeline-container hidden">
+      <h2>Our History</h2>
+      <section id="timeline">
+        <div class="tl-item">
+          <div class="tl-bg"></div>
+          
+          <div class="tl-year">
+            <p class="f2 heading--sanSerif">2019</p>
+          </div>
+      
+          <div class="tl-content">
+            <h1>Organization Founded</h1>
+            <p>When Renee founded the organization, the Churchill Valley Greenway was abondoned from the bankrupcy of the golf club that ran on it. It was an open field which she would let her dog run free.</p>
+          </div>
+      
+        </div>
+      
+        <div class="tl-item">
+          
+          <div class="tl-bg" style="background-image: url(https://placeimg.com/802/802/nature)"></div>
+          
+          <div class="tl-year">
+            <p class="f2 heading--sanSerif">2020</p>
+          </div>
+      
+          <div class="tl-content">
+            <h1 class="f3 text--accent ttu">Riverbed Cleanup</h1>
+            <p>The Chalfant Run organized their first event, more than 80 volunteers showed up to cleanup the riverbed, among them was Summer Lee, PA's congresswoman. </p>
+          </div>
+      
+        </div>
+      
+        <div class="tl-item">
+          
+          <div class="tl-bg" style="background-image: url(https://placeimg.com/803/803/nature)"></div>
+          
+          <div class="tl-year">
+            <p class="f2 heading--sanSerif">2023</p>
+          </div>
+      
+          <div class="tl-content">
+            <h1 class="f3 text--accent ttu">Growing in Size</h1>
+            <p>After Covid, we continued to grow in size, and partnered with University of Pittsburgh to study and preserve of rivers and streams.</p>
+          </div>
+      
+        </div>
+      
+        <div class="tl-item">
+          
+          <div class="tl-bg" style="background-image: url(https://placeimg.com/800/800/nature)"></div>
+          
+          <div class="tl-year">
+            <p class="f2 heading--sanSerif">2024</p>
+          </div>
+      
+          <div class="tl-content">
+            <h1 class="f3 text--accent ttu">To Be Continued...</h1>
+          </div>
+      
+        </div>
+      </section>
+    </div>
+
+
+    
     <!-- new addition Nov 10 2023 SM --> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <!-- end of new addition -->

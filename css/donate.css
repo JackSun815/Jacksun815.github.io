@@ -65,38 +65,41 @@ body{
   }
   /*end nav bar */
 
+  .about-us-container{
+    background-image: url('/img/background-image-blur-events.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow:
+     rgb(52, 229, 197) 0px 0px 30px 3px inset,
+     rgb(22, 252, 210) -1px 01px 20px 2px ;
+    color: whitesmoke;
+    padding-left: auto !important;
 
-#current-donate{
-    color:rgb(255, 255, 255);
-    border-radius: 18px;
-    border: 2px solid #258989;
-    background-color: #258989;
-    letter-spacing: -1px;
-    padding:3px 15px;
-    opacity: 0.8;
 }
 
-#donate-form{
-    border-radius: 13px;
-    max-width:90%;
-    border:1px solid #ccc;
-    margin:auto;
-    margin-top: 20px;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.about-us-title{
+    width:80% !important;
+    padding-top: 50px;
+    margin: 0px auto;
+}
+.about-us-title h2{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color:white;
+    font-size: 2rem !important;
+    font-weight: 500 !important;
+    display: flex;
+    justify-content: center;
 }
 
-h1{
-    font-weight: bold;
-    color: #258989;
-    text-decoration: underline;
-    padding-left: 7px;
-    padding-right: 7px;
-    text-align: center;
+.about-us-title p{
+    font-size: 1.2rem;
+    width: 98%;
+
 }
 
-p{
-    margin: 0 15px;
+hr{
+    color:whitesmoke !important;
 }
 
 
@@ -113,8 +116,14 @@ p{
 }
 
 #donate-button{
+    margin-top:80px;
     display: flex;
     justify-content: center;
+    margin-left: auto;
+}
+
+.donate{
+  border-radius: 25px;
 }
 
 .pattern{
@@ -168,13 +177,13 @@ p{
   }
 
 
+
 /* Bootstrap breakpoint for the navbar hamburger menu */
 @media (min-width: 992px){
 
     .donate{
         color:white !important;
-        border-radius: 20px;
-        /* border: 2px solid #258989; */
+        border: 2px solid #258989;
         background-color: #258989 !important;
         letter-spacing: -1px !important;
         width: 120px !important; 

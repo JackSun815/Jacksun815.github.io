@@ -1,117 +1,116 @@
-<!--For ind 3 I did my functions in about-us.html page. All the Javascript function are in js file label correspondingly-->
 <!DOCTYPE html>
 <html>
-    <head>
-      <title>Chalfant Run</title>
-      <link rel="stylesheet" href="css/styles.css">
-      <!-- Meta Tags-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta charset="UTF-8">
-      <meta name="description" content="Chalfant Run">
-      <meta name="keywords" content="Watershed, Event, Nonprofit">
-      <meta name="author" content="Jack Sun">  
-      <!-- new addition Nov 10 2023 SM --> 
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-      <!-- end of new addition -->
-    </head>
+  <head>
+    <title>Chalfant Run</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="./js/app.js"></script>
+    <!-- Meta Tags-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="Chalfant Run">
+    <meta name="keywords" content="Watershed, Event, Nonprofit">
+    <meta name="author" content="Jack Sun">  
+    <!-- new addition Nov 10 2023 SM --> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- end of new addition -->
+  </head>
 
-    <body>
-      <!--The background pattern-->
-      <div class='pattern'></div>
+  <body>
+    <!--The background pattern-->
+    <div class='pattern'></div>
+    
+    <!--Popup Message-->
+    <div class="alert alert-warning alert-dismissible fade show popup" role="alert">
+      <strong>Take 3 minutes to Complete the <a href="https://forms.gle/5AkVXY6KXyvE4H8G9" target="_blank">Community Needs Survey!</a></strong> This will help us understand our community needs + wants. 
+      <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <script>$(".alert").alert('close')
+    </script>
 
-      <!--Popup-->
-      <div class="alert alert-warning alert-dismissible fade show popup" role="alert">
-        <strong>Take 3 minutes to Complete the <a href="https://forms.gle/5AkVXY6KXyvE4H8G9" target="_blank">Community Needs Survey!</a></strong> This will help us understand our community needs + wants. 
-        <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+    <!-- Global Navigation --> 
+    <nav class="navbar navbar-expand-lg bg-body-tertiary topnav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./img/output-onlinepngtools.png" alt="Logo" height="65" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav nav-fill w-100">
+            <li class="nav-item modify-navbar">
+              <a class="nav-link px-3 green current" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item modify-navbar">
+              <a class="nav-link px-3 green" href="./about-us.html">About Us</a>
+            </li>
+            <li class="nav-item modify-navbar">
+              <a class="nav-link px-3 green" href="./streams.html">Meet Our Streams</a>
+            </li>
+            <li class="nav-item modify-navbar">
+              <a class="nav-link px-3 green" href="./involved.html">Get Involved</a>
+            </li>
+            <li class="nav-item modify-navbar">
+              <a class="nav-link px-3 green donate" href="./donate.html">    Donate</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <script>$(".alert").alert('close')
-      </script>
-      <!-- Global Navigation --> 
-      <nav class="navbar navbar-expand-lg bg-body-tertiary topnav">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="./img/output-onlinepngtools.png" alt="Logo" height="65" class="d-inline-block align-text-top">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-            <ul class="navbar-nav nav-fill w-100">
-              <li class="nav-item modify-navbar">
-                <a class="nav-link px-3 green current" aria-current="page" href="./index.html">Home</a>
-              </li>
-              <li class="nav-item modify-navbar">
-                <a class="nav-link px-3 green" href="./about-us.html">About Us</a>
-              </li>
-              <li class="nav-item modify-navbar">
-                <a class="nav-link px-3 green" href="./streams.html">Meet Our Streams</a>
-              </li>
-              <li class="nav-item modify-navbar">
-                <a class="nav-link px-3 green" href="./involved.html">Get Involved</a>
-              </li>
-              <li class="nav-item modify-navbar">
-                <a class="nav-link px-3 green donate" href="./donate.html">    Donate</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-            
-      <!-- new addition Nov 10 2023 SM -->
-      <div id="carouselExampleCaptions" class="carousel slide slideshow-container">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./img/scroll1-1.png" class="d-block w-100" alt="...">
-            <div class="numbertext">Don leading a hike &#128526;</div>
-            <div class="carousel-caption d-none d-md-block">
-              <h1 class="align-middle">The Chalfant Run / Thompson Run Watershed Association</h1>
-              <p>"All the water that will ever be is, right now."
-                <br><b>National Geographic, October 1993</b></p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./img/scroll1-2.png" class="d-block w-100" alt="...">
-            <div class="numbertext">Ben, our engineer! &#128516;</div>
-            <div class="carousel-caption d-none d-md-block">
-              <h1 class="align-middle">The Chalfant Run / Thompson Run Watershed Association</h1>
-              <p>"All the water that will ever be is, right now."
-                <br><b>National Geographic, October 1993</b></p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./img/scroll1-3.png" class="d-block w-100" alt="...">
-            <div class="numbertext">Fireflies at the Watershed cr.@dmirales &#129395;</div>
-            <div class="carousel-caption d-none d-md-block">
-              <h1 class="align-middle">The Chalfant Run / Thompson Run Watershed Association</h1>
-              <p>"All the water that will ever be is, right now."
-                <br><b>National Geographic, October 1993</b></p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+    </nav>
+          
+    <!-- new addition Nov 10 2023 SM -->
+    <div id="carouselExampleCaptions" class="carousel slide slideshow-container">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/scroll1-1.png" class="d-block w-100" alt="...">
+          <div class="numbertext">Don leading a hike &#128526;</div>
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="align-middle">The Chalfant Run / Thompson Run Watershed Association</h1>
+            <p>"All the water that will ever be is, right now."
+              <br><b>National Geographic, October 1993</b></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/scroll1-2.png" class="d-block w-100" alt="...">
+          <div class="numbertext">Ben, our engineer! &#128516;</div>
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="align-middle">The Chalfant Run / Thompson Run Watershed Association</h1>
+            <p>"All the water that will ever be is, right now."
+              <br><b>National Geographic, October 1993</b></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/scroll1-3.png" class="d-block w-100" alt="...">
+          <div class="numbertext">Fireflies at the Watershed cr.@dmirales &#129395;</div>
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="align-middle">The Chalfant Run / Thompson Run Watershed Association</h1>
+            <p>"All the water that will ever be is, right now."
+              <br><b>National Geographic, October 1993</b></p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
 
     <!--About Us Section-->
-    <div class="about-us-background-blur">
-    </div>
-    <div class="about-us-container" id="who-we-are-pos">
+    <div class="about-us-container">
       <div class="row">
-          <div class="col-md-8 about-us-title">
+          <div class="col-md-8 about-us-title hidden">
             <h2>Who We Are</h2>
             <h1>Do you live, work, or play in the Chalfant Run/Thompson Run <span style="color: #b9effe">Watershed</span>?</h1>
             <p>It covers 15.89 square miles across the seven municipalities of Penn Hills, Monroeville, and Wilkins Township, and the Boroughs of Wilkinsburg, Churchill, Plum and Turtle Creek.</p>
@@ -134,16 +133,12 @@
       </div>
     </div>
 
-    
-
     <!--Events Section-->
-    <div class="events-background-blur">
-    </div>
-    <div id="events-container" class="about-us-container">
+    <div class="about-us-container">
       <div class="row">
-          <div class="col-md-8 about-us-title">
+          <div class="col-md-8 about-us-title hidden">
             <h2>What We Do</h2>
-            <h1>All the <span style="color: #b9effe">Water</span> that will ever be is, right now.</h1>
+            <h1>All the <span style="color: #b9effe">Water</span> that will ever be is, right now.</h1>            
           </div>
           <hr>
       </div>
@@ -155,139 +150,124 @@
           <br>
           <hr>
           <a href="./events.html" class="more-info-button">Events</a>
-        
         </div>
       </div>
     </div>
-   
 
-    <!-- <div class="index-donate-container">
-        <h1>DONATE</h1>
-        <p>With you help, we can make our streams vibrant, life-giving places again that invite awe, wonder and contemplation.</p>
-        <form id="donate-button" action="https://www.paypal.com/donate" method="post" target="_top">
-            <input type="hidden" name="hosted_button_id" value="LALFNW2XYF5VY">
-            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" width="100" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="5" height="5" />
-            </form>
-    </div> -->
     <!-- new addition Nov 10 2023 SM --> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <!-- end of new addition -->
 
-      <div class="row homepage-grid-container">
-        <div class="grid-containers">
-          <a href="./events.html">
-          <img class="grid-image" src="./img/homepage-grid1.png"></a>
-          <hr>
-          <h3>Become a Member.</h3>
-          <p>Join a Community of Nature Lovers Committed to Restoring our Local Streams 
-          </p>
-          <a href="./events.html" class="grid-button">Join Us</a>
-        </div> 
+    <!--Home page Quick Links: Join us, Get involved, Donate-->
+    <div class="row homepage-grid-container">
+      <!--Join Us subsection-->
+      <div class="grid-containers hidden">
+        <a href="./events.html">
+        <img class="grid-image" src="./img/homepage-grid1.png"></a>
+        <hr>
+        <h3>Become a Member.</h3>
+        <p>Join a Community of Nature Lovers Committed to Restoring our Local Streams 
+        </p>
+        <a href="./events.html" class="grid-button">Join Us</a>
+      </div> 
 
-        <div class="grid-containers">
-          <a href="./involved.html">
-          <img class="grid-image" src="./img/homepage-grid2.png"></a>
-          <hr>
-          <h3>Make a Difference.</h3>
-          <p>Explore Ways to Get Involved. Bring your dreams and ideas
-          </p>
-          <a href="./involved.html" class="grid-button">Get Involved</a>
-        </div> 
-     
-        <div class="grid-containers">
-          <a href="./donate.html">
-          <img class="grid-image" src="./img/homepage-grid3.png"></a>
-          <hr>
-          <h3>Support Our Work.</h3>
-          <p>Your vital support will ensure we achieve our shared mission of a restored, resilient watershed.
-          </p>
-          <a href="./donate.html" class="grid-button">Donate</a>
-        </div> 
-      </div>
-
-
-
-    </div>
-
+      <!--Get Involved subsection-->
+      <div class="grid-containers hidden">
+        <a href="./involved.html">
+        <img class="grid-image" src="./img/homepage-grid2.png"></a>
+        <hr>
+        <h3>Make a Difference.</h3>
+        <p>Explore Ways to Get Involved. Bring your dreams and ideas
+        </p>
+        <a href="./involved.html" class="grid-button">Get Involved</a>
+      </div> 
     
+      <!--Donate subsection-->
+      <div class="grid-containers hidden">
+        <a href="./donate.html">
+        <img class="grid-image" src="./img/homepage-grid3.png"></a>
+        <hr>
+        <h3>Support Our Work.</h3>
+        <p>Your vital support will ensure we achieve our shared mission of a restored, resilient watershed.
+        </p>
+        <a href="./donate.html" class="grid-button">Donate</a>
+      </div> 
+    </div>
+  </body>
 
-
-      <!-- Footer -->
-      <img id="footer-background" src="./img/footer-bg.png">
-      <footer class="text-center text-white footer-pos">
-        <!-- Grid container -->
-        <div class="container">
-          <!-- Section: Links -->
-          <section class="mt-5 footer-align">
-            <!-- Grid row-->
-            <div class="row text-center d-flex justify-content-center pt-5">
-              <!-- Grid column -->
-              <div class="col-md-2 footer-text">
-                <h6 id="footer-home" class="text-uppercase font-weight-bold">
-                  <a href="./index.html" class="text-white">Home</a>
-                </h6>
-              </div>
-              <!-- Grid column -->
-
-              <!-- Grid column -->
-              <div class="col-md-2 footer-text">
-                <h6 class="text-uppercase font-weight-bold">
-                  <a href="./about-us.html" class="text-white">About Us</a>
-                </h6>
-              </div>
-              <!-- Grid column -->
-
-              <!-- Grid column -->
-              <div class="col-md-2 footer-text">
-                <h6 class="text-uppercase font-weight-bold">
-                  <a href="./streams.html" class="text-white">Meet Our Streams</a>
-                </h6>
-              </div>
-              <!-- Grid column -->
-
-              <!-- Grid column -->
-              <div class="col-md-2 footer-text">
-                <h6 class="text-uppercase font-weight-bold">
-                  <a href="./events.html" class="text-white">Events</a>
-                </h6>
-              </div>
-              <!-- Grid column -->
-
-              <!-- Grid column -->
-              <div class="col-md-2 footer-text">
-                <h6 id="footer-donate" class="text-uppercase font-weight-bold">
-                  <a href="./donate.html" class="text-white">Donate</a>
-                </h6>
-              </div>
-              <!-- Grid column -->
-              <hr>
-            </div>
-            <!-- Grid row-->
-          </section>
-          <!-- Section: Text -->
-
-          <!-- Section: Social -->
-          <section class="text-center mb-5">
-            
-         </section>
-          <!-- Section: Social -->
+  <!-- Footer -->
+  <img id="footer-background" src="./img/footer-bg.png">
+  <footer class="text-center text-white footer-pos">
+  <!-- Grid container -->
+  <div class="container">
+    <!-- Section: Links -->
+    <section class="mt-5 footer-align">
+      <!-- Grid row-->
+      <div class="row text-center d-flex justify-content-center pt-5">
+        <!-- Grid column -->
+        <div class="col-md-2 footer-text">
+          <h6 id="footer-home" class="text-uppercase font-weight-bold">
+            <a href="./index.html" class="text-white">Home</a>
+          </h6>
         </div>
-        <!-- Grid container -->
+        <!-- Grid column -->
 
-        <!-- Copyright -->
-        <div
-            class="text-center p-3"
-            style="background-color: rgba(0, 0, 0, 0.2)"
-            >
-          © 2024 Copyright:
-          <a class="text-white" href="https://chalfantrun.org/"
-            >Chalfant Run/Thompson Run Watershed Association.</a
-            >
+        <!-- Grid column -->
+        <div class="col-md-2 footer-text">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="./about-us.html" class="text-white">About Us</a>
+          </h6>
         </div>
-        <!-- Copyright -->
-      </footer>
-      <!-- Footer -->
+        <!-- Grid column -->
 
-    </body>
+        <!-- Grid column -->
+        <div class="col-md-2 footer-text">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="./streams.html" class="text-white">Meet Our Streams</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 footer-text">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="./events.html" class="text-white">Events</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 footer-text">
+          <h6 id="footer-donate" class="text-uppercase font-weight-bold">
+            <a href="./donate.html" class="text-white">Donate</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+        <hr>
+      </div>
+      <!-- Grid row-->
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Social -->
+    <section class="text-center mb-5">
+      
+   </section>
+    <!-- Section: Social -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div
+      class="text-center p-3"
+      style="background-color: rgba(0, 0, 0, 0.2)"
+      >
+    © 2024 Copyright:
+    <a class="text-white" href="https://chalfantrun.org/"
+      >Chalfant Run/Thompson Run Watershed Association.</a
+      >
+  </div>
+  <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
 </html> 
