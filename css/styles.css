@@ -13,23 +13,33 @@ body{
 }
 
 /* Start Timeline */
+
 .timeline-container{
-    padding: 20px;
 }
 
 .timeline-container h2{
     margin-top: 20px;
-    color: #258989;
+    color: #7FDDDD;
     font-size: 1.5rem;
     font-weight: 700 !important;
 }
 
+
+
 #timeline {
 	display: flex;
 	background-color:#7FDDDD;
-    background-image: url('/img/events02.png');
+    background-image: url('/img/scroll1-1.png');
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  #timeline h2{
+    position: absolute;
+    margin-left: 30px;
+    color:rgb(255, 255, 255);
+    mix-blend-mode: difference;
+    z-index: 1;
   }
   #timeline:hover .tl-item {
 	width: 23.3333%;
@@ -190,12 +200,19 @@ body{
 /*end nav bar */
 
 /* About Us Page: Join Us Container */
+#join-our-team-container{
+    background-image: url('/img/background-image-blur-events.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+
+}
+
 .join-us-container{
-    background-color:#258989;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
-    padding: 25px;
+    margin-top: 50px !important;
+    padding-right: 100px !important;
     border-radius: 15px;
 }
 
@@ -253,10 +270,11 @@ body{
 #fs-frm select,
 #fs-frm textarea,
 #fs-frm #card-element {
-  border: 1px solid rgba(0,0,0,0.2);
-  background-color: rgba(255,255,255,0.9);
-  padding: .75em 1rem;
-  margin-bottom: 1.5rem;
+  border: 1px solid rgba(33, 255, 248, 0.2);
+  background-color: white;
+  color:#258989;
+  padding: .5em 1rem;
+  margin-bottom: 1.75rem;
 }
 #fs-frm input:focus,
 #fs-frm select:focus,
@@ -329,7 +347,7 @@ body{
 }
 
 input[type=submit] {
-    color: white;
+    color: #7FDDDD;
     padding: 12px 40px !important;
     border: none;
     border-radius: 17px !important;
@@ -1117,7 +1135,7 @@ body{
 
 /* App.js */
 .hidden{
-    opacity: 0;
+    opacity: 0; 
     transition: all 1.5s;
     filter: blur(5px);
     transform: translateX(-100px);

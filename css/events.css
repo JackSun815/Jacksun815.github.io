@@ -1,15 +1,9 @@
+@import url("styles.css");
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 
-
-
-/* global variables */
-*{
-    text-decoration: none;
-    list-style: none;
-}
 
 body{
     font-family: 'Fira Sans', sans-serif;
@@ -74,6 +68,109 @@ img{
 
 /* body */
 
+/* Video  */
+.video-container video{
+    width: 100%;
+}
+
+
+/* Quote */
+.quote-container{
+    background-color: #258989;
+    margin-top: -10px;
+    margin-bottom:-25px;
+    padding-top: 50px;
+}
+
+
+.quote-block{
+  padding: 0 150px; 
+}
+
+.quote-text{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1%;
+}
+
+.blockquote-footer{
+  color: white !important;
+}
+
+
+/* Ways to Give */
+.ways-to-give-container{
+  background-color: white;
+}
+
+.ways-to-give-container h1{
+  font-size: 2.5em;
+  font-weight: bold;
+  width: fit-content;
+  color:#258989;
+  margin-left: 25px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  border-radius:10px;
+}
+
+.ways-to-give-wrapper hr{
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, rgb(11, 63, 85), rgb(21, 160, 135));
+}
+
+.ways-to-give-img{
+  width: 100%;
+}
+
+.ways-to-give-text{
+  padding: 10px 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.ways-to-give-text p{
+  margin-left: 15px;
+  margin-bottom: 40px;
+  color:#000000;
+  letter-spacing: 0.05em;
+}
+
+.ways-to-give-text h2{
+  margin-left: 15px;
+  font-size: 1.6em;
+  font-weight: bold;
+  width: fit-content;
+  color:#258989;
+  padding-bottom: 5px;
+}
+
+.ways-to-give-button{
+  margin-left: 15px;
+  text-decoration: none;
+  font-size: 1em;
+  border-radius: 45px;
+  padding: 12px 30px; 
+  background-color: #258989;
+  color: white;
+}
+
+.ways-to-give-button:hover{
+opacity: 0.8;
+}
+
+#volunteer-img{
+  float:right !important;
+}
+
+
 .body-container{
     /* background-color:white; */
     display:flex;
@@ -120,7 +217,6 @@ img{
 /*  the events container  */
 .events{
     margin-bottom: 5%;
-    background-color:#25D0D0;
     border-radius: 2%;
 }
 
@@ -143,8 +239,8 @@ img{
     background-color: #FF3CAC;
     background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
     text-decoration: none;
-    padding:0.8%;
-    border-radius:7px;
+    padding: 10px 20px;
+    border-radius:20px;
     margin:10px;
 }
 
@@ -153,16 +249,7 @@ img{
     opacity: 0.8;
 }
 
-/*background repeating pattern with lowest z-index*/
-.pattern{
-    position: fixed;
-    width: 100vw;
-    height: 100vh; 
-    background-color: #e5e5f7;
-    opacity: 0.25;
-    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 31px ), repeating-linear-gradient( #16a7a755, #16a7a7 );
-    z-index: -100;
-}
+
 
 
 /* Footer */
@@ -229,13 +316,13 @@ img{
     .events{
         display: flex;
         flex-direction: column;
-        background-color: beige;
+        /* background-color: beige; */
         width:100%;
         margin:auto;
         margin-bottom:10px;
     }
     .events h2{
-        color:black;
+        /* color:black; */
         text-align: center;
     }
 
