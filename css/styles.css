@@ -14,8 +14,6 @@ body{
 
 /* Start Timeline */
 
-.timeline-container{
-}
 
 .timeline-container h2{
     margin-top: 20px;
@@ -112,6 +110,7 @@ body{
 	font-size: 1.2rem !important;
 	font-weight: normal;
   }
+
   
   .tl-year {
 	position: absolute;
@@ -339,7 +338,7 @@ body{
 }
 #fs-frm fieldset.locale select[name="state"],
 #fs-frm fieldset.locale input[name="postal-code"] {
-  width: 20%;
+  width: 30%;
 }
 #fs-frm fieldset.locale input[name="city"],
 #fs-frm fieldset.locale select[name="state"] {
@@ -680,7 +679,6 @@ hr{
     margin-left: 30px;
     padding-top: 400px;
     color: white;
-    mix-blend-mode: difference;
 }
 
 .our-story-container{
@@ -812,6 +810,16 @@ card-col{
 
 @media (max-width: 824px) {
 
+    #fs-frm label,
+    #fs-frm legend,
+    #fs-frm ::placeholder {
+    font-size: 0.85rem;
+    margin-bottom: .5rem;
+    padding-top: .2rem;
+    display: flex;
+    align-items: baseline;
+    }
+
     /* Start for about us main page section */
     .about-us-background-blur{
         height:1950px;
@@ -873,26 +881,6 @@ card-col{
         font-size: large !important;
         margin-bottom: 20px !important;
     }
-}
-
-@media (max-width: 992px){
-    .about-us-map p{
-        font-size: 1.3rem;
-        font-weight: 100;
-    }
-}
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
-*{
-    text-decoration: none;
-    list-style: none;
-}
-
-body{
-    font-family: 'Fira Sans', sans-serif;
-    font: normal 100%;
 }
 
 /* Start Timeline */
@@ -967,9 +955,12 @@ body{
   .tl-content h1 {
 	font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
-	color:#0fa;
-	font-size: 1.44rem;
+	font-size: 1.3rem !important;
 	font-weight: normal;
+  }
+
+  .tl-content p{
+    font-size: 1rem !important;
   }
   
   .tl-year {
@@ -983,7 +974,7 @@ body{
   }
   .tl-year p {
 	font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
-	font-size: 1.728rem;
+	font-size: 1.2rem;
 	line-height: 0;
   }
   
@@ -1352,6 +1343,22 @@ card-col{
 
 
 /*Media Query */
+
+@media (max-width: 992px){
+    .about-us-map p{
+        font-size: 1.3rem;
+        font-weight: 100;
+    }
+    .tl-content h1 {
+        font-size: 1.1rem !important;
+        font-weight: normal;
+      }
+    
+      .tl-content p{
+        font-size: 0.85rem !important;
+      }
+}
+
 
 @media (max-width: 1000px){
     .about-us-background-blur{

@@ -139,8 +139,8 @@ img{
 .body-container h1{
   font-size: 2em;
   font-weight: bold;
-  letter-spacing:0.1em;
   border-bottom: 4px solid #258989;
+  letter-spacing: 0.5px;
   width: fit-content;
   margin-top:30px;
   margin-left:15px;
@@ -229,6 +229,7 @@ img{
   font-weight: bold;
   color: #258989;
   text-decoration: underline;
+  padding-top: 5px;
   padding-left: 7px;
   padding-right: 7px;
 }
