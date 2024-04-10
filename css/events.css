@@ -81,7 +81,9 @@ img{
     margin-bottom:-25px;
     padding-top: 50px;
     padding-bottom: 50px;
+    height: 300px;
 }
+
 
 .quote-text{
     color: white;
@@ -131,6 +133,7 @@ img{
   padding: 10px 20px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 15px;
 
 }
 
@@ -221,17 +224,18 @@ opacity: 0.8;
 
 
 .events h2{
-    color:white;
-    margin: 25px;
-    letter-spacing:0.03cm;
-    text-shadow: 
-    0 0 5px #FFFF00 /* Small yellow glow */;
+  color:white;
+  margin: 25px;
+  letter-spacing:0.03cm;
+  text-shadow: 
+  0 0 5px #FFFF00 /* Small yellow glow */;
 }
 
 .events p{
     font-family: 'Helvetica Neue', arial, sans-serif;
     letter-spacing:0.03cm;
-}
+    width: 75%;
+  }
 
 .events a{
     font-size: 14px;
@@ -241,7 +245,8 @@ opacity: 0.8;
     text-decoration: none;
     padding: 10px 20px;
     border-radius:20px;
-    margin:10px;
+    position: relative;
+    top: 10%;
 }
 
 .events a:hover{
@@ -257,20 +262,20 @@ opacity: 0.8;
     text-decoration: none;
   }
   
-  #footer-background{
+#footer-background{
     width:100%;
     margin-bottom: -50px;
   }
   
-  .footer-text{
+.footer-text{
     margin-bottom: 10px;
   }
   
-  .footer-text a{
+.footer-text a{
     text-decoration: none !important;
   }
   
-  #footer-home{
+#footer-home{
     font-weight: 800;
     text-shadow:
       0 0 4px #fff,
@@ -283,11 +288,20 @@ opacity: 0.8;
       0 0 150px #0fa;
   }
   
-  .footer-text a:hover{
+.footer-text a:hover{
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffdd1b,
       0 0 35px #ffdd1b, 0 0 40px #ffdd1b, 0 0 50px #ffdd1b, 0 0 75px #ffdd1b;
       font-size: 1.1rem;
     
+  }
+
+.carousel-item {
+    opacity: 0 !important;
+    transition: opacity ease-in-out 0.3s !important;
+  }
+  
+.carousel-item.active {
+    opacity: 1 !important;
   }
 
 
@@ -295,21 +309,39 @@ opacity: 0.8;
 /* Media Queries */
 /*desk top*/
 @media screen and (max-width: 1000px) {
+  .quote-text{
+    font-size: 12px !important;
+    padding-left: 100px !important;
+    padding-right:100px !important;
+  }
 
+  .blockquote-footer{
+  font-size: 11px !important;
+  }
+
+  .quote-container{
+    background-color: #258989;
+    margin-top: -10px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    height: 200px;
+}
     }
   
-/*tablet*/
-
-  
-  
-
   
 /*phone*/
 @media screen and (max-width: 576px) {
+    .about-us-container{
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    hr{
+      margin-left: 15px !important;
+    }
     #engineer, #assessment, #firefly{
-        margin:auto;
         width:auto;
-
+        margin-left:auto;
+        margin-right: auto;
     }
 
     .events{
@@ -317,8 +349,10 @@ opacity: 0.8;
         flex-direction: column;
         /* background-color: beige; */
         width:100%;
-        margin:auto;
         margin-bottom:10px;
+        margin-left:auto;
+        margin-right: auto;
+        text-align: center !important;
     }
     .events h2{
         /* color:black; */
@@ -328,12 +362,17 @@ opacity: 0.8;
     .events p{
         font-family: 'Helvetica Neue', arial, sans-serif;
         letter-spacing:0.01cm;
-        margin-right:1px;
+        width: 95%;
+        margin-left:auto !important;
+        margin-right: auto !important;
+
     }
 
-    .events a{
-        width: fit-content;
-    }
+    .events a {
+      display: inline-block;
+      margin: 0 auto; 
+  }
+  
 
     .body-container{
         display:flex;
@@ -349,7 +388,14 @@ opacity: 0.8;
     .blockquote-footer{
     font-size: 10px !important;
     }
+
+    .quote-container{
+      margin-top: -10px;
+      padding-top: 20px;
+      padding-bottom: 0px;
+      height: 180px;
   }
+}
 
 
 /* Bootstrap breakpoint for the navbar hamburger menu */

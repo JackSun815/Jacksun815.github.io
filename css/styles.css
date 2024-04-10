@@ -720,7 +720,7 @@ hr{
 }
 
 .our-story-img img{
-    margin-left: 60px;
+    margin-left: 50px;
     width: 80%;
 }
 
@@ -1354,7 +1354,12 @@ card-col{
       }
     
       .tl-content p{
-        font-size: 0.85rem !important;
+        font-size: 0.9rem !important;
+      }
+
+      .tl-item {
+        height: 125vh;
+        min-height: 600px;
       }
 }
 
@@ -1403,7 +1408,9 @@ card-col{
     }
 
     .our-story-text{
-        width: 80% !important;
+        width: 100% !important;
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
     
