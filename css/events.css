@@ -23,7 +23,7 @@ img{
 
 /* Navigation Bar */
 .navbar a:hover{
-    color:#7FDDDD;
+    color:#439eb4 !important;
     padding-bottom:5px;
     border-bottom: 0px solid #258989;
   } 
@@ -128,6 +128,7 @@ img{
 .ways-to-give-img{
   width: 100%;
 }
+
 
 .ways-to-give-text{
   padding: 10px 20px;
@@ -415,7 +416,7 @@ opacity: 0.8;
         0.3em 0.3em 1em #7FDDDD;
     }
     .navbar a:hover{
-        color:#7FDDDD;
+        color:#439eb4;
         padding-bottom:5px;
         border-bottom: 0px solid #258989;
     } 
@@ -431,4 +432,8 @@ opacity: 0.8;
         font-size: large !important;
         margin-bottom: 20px !important;
     }
+  }
+
+  #donate-hover a:hover{
+    color:white !important;
   }

@@ -158,7 +158,6 @@ body{
 
 /* Navigation Bar */
 .navbar a:hover{
-    color:#7FDDDD;
     padding-bottom:5px;
     border-bottom: 0px solid #258989;
 } 
@@ -189,7 +188,6 @@ body{
 }
 
 .green:hover{
-    color:#7FDDDD !important;
     font-size: 1.2rem;
     font-weight:400;
 }
@@ -529,10 +527,6 @@ hr{
     border-color: white !important;
 }
 
-#scroll1-img{
-    object-fit:cover;
-    object-position: top;
-}
 
 
 /* Events Home Page */
@@ -663,16 +657,12 @@ hr{
       0 0 150px #0fa;
 }
 
-.footer-text a:hover{
-
-}
-
 /* About Us Page - Top Title*/
 .about-us-background{
-    background-image: url('/img/about-us-main.png');
+    background-image: url('/img/scroll1-backup.jpg');
+    object-fit:cover;
+    object-position: top;
     background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat;
     height: 600px;
 }
 
@@ -879,7 +869,6 @@ card-col{
         0.3em 0.3em 1em #7FDDDD;
     }
     .navbar a:hover{
-        color:#7FDDDD;
         padding-bottom:5px;
         border-bottom: 0px solid #258989;
     } 
@@ -1016,7 +1005,6 @@ card-col{
 
 /* Navigation Bar */
 .navbar a:hover{
-    color:#7FDDDD;
     padding-bottom:5px;
     border-bottom: 0px solid #258989;
 } 
@@ -1047,9 +1035,13 @@ card-col{
 }
 
 .green:hover{
-    color:#7FDDDD !important;
+    color:#439eb4 !important;
     font-size: 1.2rem;
     font-weight:400;
+}
+
+.donate:hover{
+    color:white !important;
 }
 
 
@@ -1449,7 +1441,6 @@ card-col{
         0.3em 0.3em 1em #7FDDDD;
     }
     .navbar a:hover{
-        color:#7FDDDD;
         padding-bottom:5px;
         border-bottom: 0px solid #258989;
     } 

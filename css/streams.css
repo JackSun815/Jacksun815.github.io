@@ -27,7 +27,7 @@ img{
 
 /* Navigation Bar */
 .navbar a:hover{
-  color:#7FDDDD;
+  color:#439eb4 !important;
   padding-bottom:5px;
   border-bottom: 0px solid #258989;
 } 
@@ -58,10 +58,10 @@ img{
 }
 
 .green:hover{
-  color:#7FDDDD !important;
   font-size: 1.2rem;
   font-weight:400;
 }
+
 
 
 .navbar-toggler-icon{
@@ -435,7 +435,6 @@ img{
       0.3em 0.3em 1em #7FDDDD;
   }
   .navbar a:hover{
-      color:#7FDDDD;
       padding-bottom:5px;
       border-bottom: 0px solid #258989;
   } 
@@ -461,4 +460,8 @@ img{
   .about-us-container{
       margin-bottom: -1000px;
   }
+}
+
+#donate-hover a:hover{
+  color:white !important;
 }
