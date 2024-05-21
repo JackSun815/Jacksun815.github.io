@@ -350,7 +350,7 @@ img{
 }
 
 #footer-home{
-  font-weight: 800;
+  font-weight: 450 !important;
   text-shadow:
     0 0 4px #fff,
     0 0 11px #fff,
@@ -363,11 +363,10 @@ img{
 }
 
 .footer-text a:hover{
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffdd1b,
-    0 0 35px #ffdd1b, 0 0 40px #ffdd1b, 0 0 50px #ffdd1b, 0 0 75px #ffdd1b;
-    font-size: 1.1rem;
-  
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ffdd1b, 0 0 25px #ffdd1b;
 }
+
+
 
 
 
