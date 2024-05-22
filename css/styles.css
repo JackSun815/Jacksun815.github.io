@@ -358,8 +358,12 @@ input[type=submit] {
 input[type=submit]:hover{
     background-color: #7FDDDD !important;
     color: white !important;
-
 }
+
+input[type=text], input[type=email], input[type=tel], input[type=password], textarea, select {
+    border-radius: 10px !important;
+}
+
 
 
 
@@ -601,6 +605,8 @@ hr{
     font-size: 1rem;
     font-weight: 300 !important;
     margin-bottom: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .grid-button{
@@ -713,9 +719,9 @@ hr{
 }
 
 .our-story-img img{
-    margin-left: 50px;
-    margin-right: 50px;
-    width: 80%;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
 }
 
 
@@ -739,7 +745,6 @@ hr{
     color: white;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Black shadow */
-
 }
 
 #side-by-side{
@@ -1374,21 +1379,7 @@ card-col{
 }
 
 
-@media (max-width: 1000px){
-    .about-us-background-blur{
-        height:1400px;
-    }
-
-    .events-background-blur{
-        height:1050px;
-    }
-
-    #events-container{
-        top:-1000px;
-    }
-}
-
-@media (max-width: 824px) {
+ @media (max-width: 824px) {
 
     /* Start for about us main page section */
     .about-us-background-blur{
@@ -1422,9 +1413,8 @@ card-col{
         padding-left: 50px;
         padding-right: 50px;
     }
-
     
-}
+} 
 
 /* Bootstrap breakpoint for the navbar hamburger menu */
 @media (min-width: 992px){
@@ -1476,4 +1466,34 @@ card-col{
         font-size: 1.3rem !important;
     }
 
+}
+
+
+@media (max-width: 556px){
+    .about-us-map p{
+        font-size: 1.3rem;
+        font-weight: 100;
+    }
+    .tl-content h1 {
+        font-size: 0.9rem !important;
+        font-weight: normal;
+      }
+
+      .tl-text{
+        width: 100%;
+        margin: 0px;
+      }
+    
+      .tl-content p{
+        font-size: 0.8rem !important;
+      }
+
+      .tl-item {
+        height: 125vh;
+        min-height: 600px;
+      }
+
+      .about-us-title h1{
+        font-size: 2.2rem;
+    }
 }
