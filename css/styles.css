@@ -50,7 +50,7 @@ body{
 	transform: translate3d(0, 0, 0);
 	position: relative;
 	width: 25%;
-	height: 80vh;
+	height: 100vh;
 	min-height: 600px;
 	color: #7FDDDD;
 	overflow: hidden;
@@ -468,6 +468,12 @@ input[type=text], input[type=email], input[type=tel], input[type=password], text
     margin-bottom:50px !important;
 }
 
+#what-we-know-container{
+    background-image: url('/img/background-image-blur-events.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .about-us-title{
     width:85% !important;
     padding-right:50px !important;
@@ -500,6 +506,7 @@ hr{
 #map{
     float:right;
     width: 60%;
+    margin-bottom: 20px;
 }
 
 .about-us-map{
@@ -788,6 +795,13 @@ card-col{
     height: 800px;
 }
 
+#mail-to{
+    color: #f8fefe;
+}
+
+.footer-contact h4{
+    margin-bottom: 20px;
+}
 
 
 /*Media Query */
@@ -904,7 +918,7 @@ card-col{
 	transform: translate3d(0, 0, 0);
 	position: relative;
 	width: 25%;
-	height: 100vh;
+	height: 125vh;
 	min-height: 600px;
 	color: #fff;
 	overflow: hidden;
