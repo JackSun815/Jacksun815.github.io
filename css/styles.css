@@ -30,7 +30,7 @@ body{
 #timeline {
 	display: flex;
 	background-color:#7FDDDD;
-    background-image: url('/img/scroll1-1.png');
+    background-image: url('/img/scroll1-1.webp');
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -124,6 +124,7 @@ body{
 	border-top: 0px solid #fff;
 	border-bottom: 1px solid #fff;
   }
+
   .tl-year p {
 	font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
 	font-size: 1.428rem !important;
@@ -671,6 +672,13 @@ hr{
 }
 
 /* About Us Page - Top Title*/
+#learn-more{
+    text-decoration: none;
+    color:rgb(29, 195, 200);
+}
+#learn-more:hover{
+    color:white;
+}
 .about-us-background{
     background-image: url('/img/scroll1-backup.jpg');
     object-fit:cover;
@@ -970,8 +978,8 @@ card-col{
 	position: relative;
 	z-index: 1;
 	text-align: center;
-	margin: 0 1.618em;
-	top: 55%;
+	margin: 0 1em;
+	top: 35%;
 	opacity: 0;
   }
   .tl-content h1 {
@@ -992,13 +1000,22 @@ card-col{
 	transform: translateX(-50%) translateY(-50%);
 	z-index: 1;
 	border-top: 0px solid #fff;
-	border-bottom: 1px solid #fff;
+	border-bottom: 0px solid #fff;
   }
+
   .tl-year p {
-	font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
-	font-size: 1.2rem;
-	line-height: 0;
+    font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 1.428rem !important;
+    line-height: 0;
+    opacity: 1; /* Initially visible */
+    transition: opacity 0.5s ease; /* Smooth transition */
   }
+
+  .tl-item:hover .tl-year p {
+    opacity: 0; /* Invisible when hovering */
+    border-width: 0px; /* Hide the border bottom when hovering */
+
+}
   
   .tl-bg {
 	transform: translate3d(0, 0, 0);
@@ -1387,6 +1404,12 @@ card-col{
         min-height: 600px;
       }
 
+      .tl-content {
+        margin: 0 1em;
+        top: 22%;
+        opacity: 0;
+      }
+
       .about-us-title h1{
         font-size: 2.2rem;
     }
@@ -1499,15 +1522,17 @@ card-col{
       }
     
       .tl-content p{
-        font-size: 0.8rem !important;
+        font-size: 0.6rem !important;
       }
-
+      .tl-content {
+        margin: 0 0em;
+      }
       .tl-item {
         height: 125vh;
         min-height: 600px;
       }
 
       .about-us-title h1{
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 }
