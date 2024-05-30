@@ -114,6 +114,14 @@ hr{
     display: block;
     margin:auto;
 }
+#mail-to{
+  color: #f8fefe;
+}
+
+.footer-contact h4{
+  margin-bottom: 20px;
+}
+
 
 #donate-button{
     margin-top:80px;
