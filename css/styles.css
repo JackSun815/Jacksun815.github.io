@@ -448,7 +448,7 @@ input[type=text], input[type=email], input[type=tel], input[type=password], text
 
 /* Home page About Us Container */
 .about-us-container{
-    background-image: url('/img/background-image-blur-about-us.png');
+    background-image: url('/img/background-image-blur-about-us.webp');
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 20px;
@@ -543,7 +543,7 @@ hr{
 
 /* Events Home Page */
 .events-background-blur{
-    background-image: url('/img/events02.png');
+    background-image: url('/img/events02.webp');
     background-size: cover;
     background-repeat: no-repeat;
     height:850px;
@@ -1188,7 +1188,7 @@ card-col{
 
 /* Home page About Us Container */
 .about-us-background-blur{
-    background-image: url('/img/background-image-blur-about-us.png');
+    background-image: url('/img/background-image-blur-about-us.webp');
     background-size: cover;
     background-repeat: no-repeat;
     height:1300px;
@@ -1269,7 +1269,7 @@ hr{
 
 /* Events Home Page */
 .events-background-blur{
-    background-image: url('/img/events02.png');
+    background-image: url('/img/events02.webp');
     background-size: cover;
     background-repeat: no-repeat;
     height:850px;
