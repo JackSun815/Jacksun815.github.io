@@ -1,6 +1,6 @@
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-        console.log(entry);
+        //console.debug(entry);
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
         }
@@ -11,7 +11,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 });
 
-const hiddenElements = document.querySelectorAll('.hidden');    
+const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach(element => {
     observer.observe(element);
 });
