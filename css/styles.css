@@ -202,7 +202,7 @@ body{
 
 /* About Us Page: Join Us Container */
 #join-our-team-container{
-    background-image: url('/img/background-image-blur-events.jpg');
+    background-image: url('/img/background-image-blur-events.webp');
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 20px;
@@ -470,7 +470,7 @@ input[type=text], input[type=email], input[type=tel], input[type=password], text
 }
 
 #what-we-know-container{
-    background-image: url('/img/background-image-blur-events.jpg');
+    background-image: url('/img/background-image-blur-events.webp');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -680,7 +680,7 @@ hr{
     color:white;
 }
 .about-us-background{
-    background-image: url('/img/scroll1-backup.jpg');
+    background-image: url('/img/scroll1-backup.webp');
     object-fit:cover;
     object-position: top;
     background-size:cover;
